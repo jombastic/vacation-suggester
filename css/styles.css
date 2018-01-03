@@ -1,5 +1,61 @@
+@font-face {
+    font-family: 'enchanted_landregular';
+    src: url('../css/fonts/enchanted_land_demo-webfont.woff2') format('woff2'),
+         url('../css/fonts/enchanted_land_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .results {
-  /*display: none;*/
+  display: none;
   margin: auto;
   width: 60%;
+}
+
+.jumbotron {
+  background-image: url("../img/vacation.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding-top: 120px;
+  font-family: "enchanted_landregular";
+  color: #f4425f;
+}
+
+.jumbotron h1 {
+  font-size: 120px;
+}
+
+.jumbotron p {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .radio-inline img {
+    height: 400px;
+    width: 100%;
+  }
+
+  .col-md-4 {
+    margin: 50px auto;
+    width: 90%;
+  }
+
+  .results {
+    width: 90%;
+  }
+
+  .jumbotron {
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .jumbotron h1 {
+    font-size: 100px;
+  }
+
+  .jumbotron p {
+    font-size: 40px;
+  }
 }

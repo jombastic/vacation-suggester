@@ -41,6 +41,7 @@ $(function() {
     if (!place || !food || !activity || !animals) {
       alert("Please answer all questions.")
     } else {
+      $("form").hide();
       $("#" + result).show();
     }
   });
